@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>تسجيل الدخول</h1>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">اسم المستخدم:</label>
+                <input type="text" id="username" required placeholder="أدخل اسم المستخدم">
+            </div>
+            <div class="input-group">
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" required placeholder="أدخل كلمة المرور">
+            </div>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+        <p id="error-message" style="color: red; display: none;">اسم المستخدم أو كلمة المرور غير صحيحة.</p>
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدخال بيانات المستخدم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إدخال بيانات المستخدم</h1>
+        <div id="datetime" class="datetime"></div> <!-- التاريخ والوقت -->
+        
+        <form id="form" enctype="multipart/form-data">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" required>
+
+            <label for="orgLocation">الموقع التنظيمي:</label>
+            <input type="text" id="orgLocation" required>
+
+            <label for="membershipNumber">رقم العضوية:</label>
+            <input type="text" id="membershipNumber" required>
+
+            <label for="nationalId">الرقم القومي:</label>
+            <input type="text" id="nationalId" required>
+
+            <label for="address">العنوان:</label>
+            <input type="text" id="address" required>
+
+            <label for="education">المؤهل الدراسي:</label>
+            <input type="text" id="education" required>
+
+            <label for="job">الوظيفة:</label>
+            <input type="text" id="job" required>
+
+            <label for="profileImage">إرفاق الصورة الشخصية:</label>
+            <input type="file" id="profileImage" required>
+
+            <label for="idFrontImage">إرفاق صورة وجه البطاقة:</label>
+            <input type="file" id="idFrontImage" required>
+
+            <label for="idBackImage">إرفاق صورة ظهر البطاقة:</label>
+            <input type="file" id="idBackImage" required>
+
+            <button type="submit">حفظ البيانات</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البحث</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <div class="search-container">
+        <h2>البحث عن بيانات المستخدم</h2>
+        <form id="search-form">
+            <label for="search-query">البحث بواسطة الاسم أو الرقم القومي:</label>
+            <input type="text" id="search-query" placeholder="أدخل الاسم أو الرقم القومي">
+            <button type="submit">بحث</button>
+        </form>
+
+        <div id="search-results">
+            <!-- النتائج ستظهر هنا -->
+        </div>
+    </div>
+
+    <script src="search.js"></script>
+</body>
+</html>
